@@ -1,0 +1,12 @@
+let email = document.getElementById("email-input");
+let password = document.getElementById("email-password");
+let div = document.getElementById("invalid");
+
+function toCheck(){
+    if(email.value ==="" || password.value ===""){
+        div.innerHTML += `<p style='text-align:center;'>Preencha todos os campos por favor</p>`
+    }
+    else{
+        div.innerHTML = ''
+    }
+}
